@@ -1,0 +1,18 @@
+<ion-content ng-controller="panda5" ng-init="pandaStartDisplayBox()" scroll="false">
+ 	<div class="textBalloon-big">
+ 		<span>{{content}}</span>
+ 	</div>
+ 	<div class="smallPandaBottom">
+	 	<img src="img/Panda.png" alt="Sorry, MR.Panda went to the bathroom >_<" class="smallPandaBottomImg">
+	 	<p style="text-align:center;width: 64%;">
+			<a class="button button-calm" style="margin-top:0px; width:45%;" href="#/screen4/">
+		        Yes
+		    </a>
+		    <a class="button button-calm" style="margin-top:0px; width:45%;" href="#/homemenu/">
+		        No
+		    </a>
+	    </p>
+		<a class="button button-calm" ng-click="nextBtnClick()" style="width: 59%;margin-left: 2%;margin-bottom: 2%;" href="#/screen4/"> I'll be late
+	    </a>
+    </div>
+</ion-content>

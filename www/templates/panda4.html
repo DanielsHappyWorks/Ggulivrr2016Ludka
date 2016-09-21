@@ -1,0 +1,29 @@
+<style>
+	div.list:nth-child(2) > a:first-child{
+		margin-top: 23px;		
+	}
+	div.list:nth-child(2) > a:last-child::after{
+		content: '';
+		padding-bottom: 85px;
+	}
+</style>
+<div ng-controller="panda4">
+	<ion-content ng-init="pandaStartDisplayBox()">
+	 	<div class="textBalloon-big">
+	 		<span>{{content}}</span>
+	 	</div>
+	 	<div class="list" ng-hide="!showChatPersons">
+	 		<a class="item item-avatar item-icon-left" ng-repeat="p in invidedpeople" href="">
+		      <img ng-src="img/{{p.profilePic}}">
+		      <h2>{{p.userName}}</h2>
+		      <p>{{p.fact}}</p>
+		    </a>
+	 	</div> 	
+	</ion-content>
+	<div class="smallPandaBottom" style="background-color: rgba(2, 2, 2, 0.62);height: 60px;">
+	 	<img src="img/Panda.png" alt="Sorry, MR.Panda went to the bathroom >_<" class="smallPandaBottomImg">
+		<a class="button button-calm" ng-click="nextBtnClick()" style="width:31%;margin-left:12%;position: relative;top: 6px;">
+	        {{btnMesssage}}
+	    </a>
+	</div>	
+</div>

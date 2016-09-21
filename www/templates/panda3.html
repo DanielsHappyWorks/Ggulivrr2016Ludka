@@ -1,0 +1,19 @@
+<ion-content ng-controller="panda3" ng-init="pandaStartDisplayBox()" scroll="false">
+ 	<div class="textBalloon-big">
+ 		<span>{{content}}</span>
+ 	</div>
+ 	<div class="bigPandaBottom">
+	 	<div><img src="img/Panda.png" alt="Sorry, MR.Panda went to the bathroom >_<" class="bigPandaBottomImg"></div>
+		<a ng-hide="txtIndex === texts.length-1" class="button button-outline button-block button-calm" ng-click="nextBtnClick()" style="margin-top:0px;">
+	        Next
+	    </a>
+	    <p ng-hide="txtIndex !== texts.length-1" style="text-align:center">
+		<a class="button button-outline button-calm" style="margin-top:0px; width:45%;" href="#/game/">
+	        MiniGame
+	    </a>
+	    <a class="button button-outline button-calm" style="margin-top:0px; width:45%;" href="#/panda4/">
+	        Chat
+	    </a>
+	    </p>
+    </div>
+</ion-content>

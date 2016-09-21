@@ -1,0 +1,21 @@
+<style>  
+  
+</style>
+<ion-content ng-controller="creditsCtrl">
+	<div style="text-align: center;margin-top: 15px;">
+		<img src="img/credit.png" alt="Credits" style="width: 76%;">
+	</div>
+	<ul class="list item-text-wrap" style="width: 98%;margin:auto;">        
+            <li ng-repeat="p in persons" class="item item-thumbnail-left">            
+              <img ng-src="img/{{p.img}}">              
+              <div>
+                <h2 class="positive">{{p.name}}</h2>
+                <h3><span style="color:rgb(56, 157, 248);">{{p.role}}</span></h3>
+                <p>{{p.school}}</p>
+              </div>
+            </li>
+          </ul>
+  <a class="button button-outline button-calm" ng-href="#/homemenu/" style="float:right;margin-right:10%;margin-top:5%;">
+        Menu
+      </a>
+</ion-content>
